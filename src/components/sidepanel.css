@@ -1,0 +1,56 @@
+.body {
+   position: relative;
+width: 424px;
+height: 1080px;
+
+
+/* Grey/025
+
+⚠️ Not used within DDS. Recommended addition.
+*/
+background: #FAFAFA;
+/* Shadow/LG */
+
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+
+
+
+}
+.header-button {
+   background-color: lightgreen;
+   color: white;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+ }
+ .header-divider {
+   border-bottom: 1px solid #ccc;
+   margin-bottom: 10px;
+ }
+ .tabs {
+   display: flex;
+   margin-top: 10px;
+ }
+ 
+ .tabs button {
+   background-color: transparent;
+   border: none;
+   padding: 0;
+   margin-right: 30px;
+   margin-left: 30px;
+   font-size: 16px;
+   cursor: pointer;
+   text-decoration: none;
+   color: #333;
+ }
+ 
+ .tabs button:hover {
+   text-decoration: underline ;
+   text-decoration-thickness: 4px;
+   color: #000;
+ }
+
+ .search-divider {
+   border-bottom: 1px solid #ccc;
+   margin-bottom: 10px;
+ }
