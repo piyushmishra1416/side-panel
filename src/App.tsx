@@ -23,19 +23,17 @@
 // }
 
 import React, { Component } from "react";
-import Header from "./components/side-panel";
+import Landing from "./components/grid";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Header
-          title="Layout"
-          buttonText="Apply"
-          onButtonClick={() => console.log("Button Clicked!")}
-        />
-        
-      </div>
+     
+<div>
+      <h1>Welcome to My App</h1>
+      <Landing />
+    </div>
+     
     );
   }
 }
