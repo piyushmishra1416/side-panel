@@ -73,28 +73,99 @@ export default class Header extends Component<HeaderProps, HeaderState> {
         </div>
       </header>
       <div className="header-divider"></div>
+      <div className="BodyContent">
        <div className="tabs">
        <button
-        
+        className="tab1"
          onClick={() => this.handleTabClick("private")}
          
        >
+        <div className="label1">
          PRIVATE
+         </div>
        </button>
        <button
-         className={activeTab === "global" ? "active" : ""}
+         className={`${activeTab === "global" ? "active" : ""} tab2`}
+        //  className={activeTab === "global" ? "active" : ""}
          onClick={() => this.handleTabClick("global")}
        >
+         <div className="label2">
          GLOBAL
+         </div>
        </button>
      </div>
-     <div className="search-divider"></div>
+     {/* <div className="search-divider"></div> */}
+     <div className="settings">
+      <div className="Frame-21948">
+
+     <div className="searchparts">
      <div className="search">
-          <input type="text" placeholder="Search Layout" onChange={this.handleSearch} />
+      <div className="icon">
+        <div className="icon-left"></div>
+      </div>
+          {/* <input type="text" placeholder="Search Layout" onChange={this.handleSearch} /> */}
+          <div className="text">
+            <div className="placeholder">
+              Search Layout
+            </div>
+          </div>
+        </div>
+        </div>
         </div>
         <div className="Frame21592">
+          <div className="Frame21569">
+            <div className="Toast1">
+              <div className="content">
+                <div className="text-vert">
+                  <div className="Frame21741">
+                    <div className="Heading">
+                      Layout1
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="Close">
+
+              </div>
+            </div>
+
+            <div className="Toast1">
+              <div className="content">
+                <div className="text-vert">
+                  <div className="Frame21741">
+                    <div className="Heading">
+                      Layout1
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="Close">
+
+              </div>
+            </div>
+
+            <div className="Toast1">
+              <div className="content">
+                <div className="text-vert">
+                  <div className="Frame21741">
+                    <div className="Heading">
+                      Layout1
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="Close">
+
+              </div>
+            </div>
 
 
+
+          </div>
+
+
+        </div>
+        </div>
         </div>
      </div>
     

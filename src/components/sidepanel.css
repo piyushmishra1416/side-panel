@@ -43,7 +43,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  gap: 263px;
+  gap: 250px;
 
   width: 376px;
   height: 32px;
@@ -88,7 +88,7 @@ margin-bottom: 22px; */
   align-items: right;
   padding: 0px 16px;
   /* margin-left: 330px; */
-  margin-right: 440px;
+  /* margin-right: 440px; */
   margin-top: 16px;
   margin-bottom: 16px;
 
@@ -110,9 +110,9 @@ Positive/Affirmative/Success — Primary UI
   flex-grow: 0;
 }
 
-/* .button {
+/* .button { */
 
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
@@ -121,10 +121,10 @@ Positive/Affirmative/Success — Primary UI
   
   width: 70px;
   height: 32px;
-  
    */
+   
 /* Inside auto layout */
-/* flex: none;
+ /* flex: none;
   order: 1;
   flex-grow: 0; 
  } */
@@ -153,13 +153,143 @@ Positive/Affirmative/Success — Primary UI
   order: 0;
   flex-grow: 0;
 }
-.header-divider {
+/* .header-divider {
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
+} */
+.BodyContent {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px;
+gap: 24px;
+
+width: 424px;
+height: 1016px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
 }
 .tabs {
+  /* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 257px;
+height: 48px;
+left: 0px;
+top: 64px;
+
+}
+.tab1 {
   display: flex;
-  margin-top: 10px;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 3px;
+
+width: 51px;
+height: 32px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.label1 {
+  width: 51px;
+height: 15px;
+
+/* Clickable (all caps text)/Default */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height, or 125% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+
+/* Grey/900 */
+
+color: #3D4042;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.tab2 {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-end;
+padding: 0px 0px 8.5px;
+gap: 4px;
+
+width: 48px;
+height: 32px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.label2 {
+  width: 48px;
+height: 15px;
+
+/* Clickable (all caps text)/Default */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height, or 125% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+
+/* Grey/900 */
+
+color: #3D4042;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
 }
 
 .tabs button {
@@ -180,9 +310,161 @@ Positive/Affirmative/Success — Primary UI
   color: #000;
 }
 
-.search-divider {
+/* .search-divider {
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
+} */
+.settings {
+  box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px;
+gap: 16px;
+
+position: absolute;
+width: 424px;
+height: 904px;
+left: 0px;
+top: 112px;
+
+/* Grey/200
+
+Border — Table
+*/
+border-top: 1px solid #CECECE;
+
+}
+.Frame21948 {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 376px;
+height: 32px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.searchparts {
+  
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 1px;
+
+width: 376px;
+height: 32px;
+
+/* Documentation Colors/White
+
+Page Background Option
+*/
+background: #FFFFFF;
+/* Grey/400
+
+Border — Control & Field Inputs
+*/
+border: 1px solid #949494;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 1;
+
+}
+.icon {
+  width: 30px;
+height: 30px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.icon-left {
+  position: absolute;
+width: 18px;
+height: 18px;
+left: calc(50% - 18px/2);
+top: calc(50% - 18px/2 - 0.5px);
+
+/* Icon (nt-dds-icons font)/18px
+
+Download the font locally from the DDS Sharepoint site.
+*/
+font-family: 'nt-dds-icons';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height, or 100% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Grey / 900 */
+
+color: #3D4042;
+
+
+}
+.text {
+  width: 344px;
+height: 30px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 1;
+
+}
+.placeholder {
+  
+position: absolute;
+width: 83px;
+height: 18px;
+left: 0px;
+/* top: calc(50% - 18px/2); */
+
+/* 13px .font-default/400 */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 18px;
+/* identical to box height, or 138% */
+
+display: flex;
+align-items: center;
+
+/* Grey/550 */
+
+color: #767676;
+
 }
 .Frame21592 {
   display: flex;
@@ -199,4 +481,168 @@ Positive/Affirmative/Success — Primary UI
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+.Frame21569 {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 376px;
+height: 860px;
+overflow-y: scroll;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.Toast1 {
+  
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px 8px 0px 0px;
+
+width: 376px;
+height: 50px;
+
+/* Documentation Colors/White
+
+Page Background Option
+*/
+background: #FFFFFF;
+/* Grey/200
+
+Border — Table
+*/
+border: 1px solid #CECECE;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+ 
+}
+.content {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px 8px 8px 16px;
+
+width: 350px;
+height: 50px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 1;
+
+}
+.text-vert {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 8px;
+gap: 8px;
+
+width: 313px;
+height: 26px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.Frame21741 {
+  display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 8px;
+
+width: 313px;
+height: 18px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.Frame21946 {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 47px;
+height: 18px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.Heading {
+  width: 47px;
+height: 18px;
+
+/* 13px .font-default/500 */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 18px;
+/* identical to box height, or 138% */
+
+
+/* Grey/900 */
+
+color: #3D4042;
+
+}
+.Close {
+  display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 16px 0px 8px;
+
+width: 18px;
+height: 50px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
 }
