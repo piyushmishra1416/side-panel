@@ -1,56 +1,202 @@
 .body {
-   position: relative;
-width: 424px;
-height: 1080px;
+  position: relative;
+  width: 424px;
+  height: 1080px;
 
+  background: #fafafa;
 
-/* Grey/025
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
 
-⚠️ Not used within DDS. Recommended addition.
-*/
-background: #FAFAFA;
-/* Shadow/LG */
+.Panel {
+  box-sizing: border-box;
 
-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 24px;
 
+  width: 424px;
+  height: 64px;
 
+  /* Grey/050
+  
+  Disabled background only
+  */
+  background: #f6f6f6;
+  /* Grey/200
+  
+  Border — Table
+  */
+  border-bottom: 1px solid #cecece;
 
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.Content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 263px;
+
+  width: 376px;
+  height: 32px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+.title {
+  width: 46px;
+  height: 20px;
+
+  /* 15px .font-md/500 */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  margin-left: 24px;
+  /* margin-right: 354px; */
+  /* margin-top: 22px;
+margin-bottom: 22px; */
+  /* identical to box height, or 133% */
+
+  /* Grey/900 */
+
+  color: #3d4042;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 .header-button {
-   background-color: lightgreen;
-   color: white;
-   border: none;
-   padding: 10px;
-   cursor: pointer;
- }
- .header-divider {
-   border-bottom: 1px solid #ccc;
-   margin-bottom: 10px;
- }
- .tabs {
-   display: flex;
-   margin-top: 10px;
- }
- 
- .tabs button {
-   background-color: transparent;
-   border: none;
-   padding: 0;
-   margin-right: 30px;
-   margin-left: 30px;
-   font-size: 16px;
-   cursor: pointer;
-   text-decoration: none;
-   color: #333;
- }
- 
- .tabs button:hover {
-   text-decoration: underline ;
-   text-decoration-thickness: 4px;
-   color: #000;
- }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  padding: 0px 16px;
+  /* margin-left: 330px; */
+  margin-right: 440px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 
- .search-divider {
-   border-bottom: 1px solid #ccc;
-   margin-bottom: 10px;
- }
+  width: 70px;
+  height: 32px;
+  /* margin-left: 30px; */
+
+  /* Interactive/Default/Green (dark-green-600)
+
+Positive/Affirmative/Success — Primary UI
+*/
+  background: #2d8031;
+  opacity: 0.4;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+/* .button {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  
+  width: 70px;
+  height: 32px;
+  
+   */
+/* Inside auto layout */
+/* flex: none;
+  order: 1;
+  flex-grow: 0; 
+ } */
+.button-text {
+  width: 38px;
+  height: 32px;
+
+  /* 12px / Button / Inverse */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 32px;
+  /* identical to box height, or 267% */
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  /* Documentation Colors/White */
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.header-divider {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.tabs {
+  display: flex;
+  margin-top: 10px;
+}
+
+.tabs button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+
+.tabs button:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  color: #000;
+}
+
+.search-divider {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.Frame21592 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 376px;
+  height: 806px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}

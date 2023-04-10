@@ -58,24 +58,26 @@ export default class Header extends Component<HeaderProps, HeaderState> {
     return (
       <div className="body">
       <header className="Panel ">
-        <h1
-          style={{
-            display: "inline-block",
-            marginRight: "100px",
-            marginLeft: "10px",
-          }}
+        <div className="Content">
+        <div
+          className="title"
         >
           {title}
-        </h1>
+        </div>
+        <div className="button">
         <button className="header-button" onClick={onButtonClick}>
-          {buttonText}
+          <div className="button-text">  {buttonText }
+          </div>
         </button>
+        </div>
+        </div>
       </header>
       <div className="header-divider"></div>
        <div className="tabs">
        <button
-         className={activeTab === "private" ? "active" : ""}
+        
          onClick={() => this.handleTabClick("private")}
+         
        >
          PRIVATE
        </button>
@@ -90,7 +92,12 @@ export default class Header extends Component<HeaderProps, HeaderState> {
      <div className="search">
           <input type="text" placeholder="Search Layout" onChange={this.handleSearch} />
         </div>
+        <div className="Frame21592">
+
+
+        </div>
      </div>
+    
     );
   }
 }
