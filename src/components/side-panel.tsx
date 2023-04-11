@@ -22,6 +22,7 @@
 // };
 import React, { Component } from "react";
 import "./sidepanel.css";
+import Selectlayout from "./Selectlayout";
 
 interface HeaderProps {
   title: string;
@@ -48,7 +49,7 @@ export default class Header extends Component<HeaderProps, HeaderState> {
 
   handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
    const searchQuery = event.target.value;
-   // do something with searchQuery, like update search results in state
+   
  };
 
   render() {
@@ -102,72 +103,35 @@ export default class Header extends Component<HeaderProps, HeaderState> {
      <div className="search">
       <div className="icon">
         <div className="icon-left"></div>
-      </div>
-          {/* <input type="text" placeholder="Search Layout" onChange={this.handleSearch} /> */}
-          <div className="text">
-            <div className="placeholder">
+      
+          
+          {/* <div className="text"> */}
+            {/* <div className="placeholder">
               Search Layout
-            </div>
+            </div> */}
+            <input className="text" type="text" placeholder="Search Layout" onChange={this.handleSearch} />
+          {/* </div> */}
+        </div>
+        </div>
+        
+        </div>
+        </div>
+
+        <div>
+        < Selectlayout name = "Layout1" />
+        
+       
+        </div>
+        <div> 
+          < Selectlayout name = "Layout2" />
           </div>
-        </div>
-        </div>
-        </div>
-        <div className="Frame21592">
-          <div className="Frame21569">
-            <div className="Toast1">
-              <div className="content">
-                <div className="text-vert">
-                  <div className="Frame21741">
-                    <div className="Heading">
-                      Layout1
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="Close">
-
-              </div>
-            </div>
-
-            <div className="Toast1">
-              <div className="content">
-                <div className="text-vert">
-                  <div className="Frame21741">
-                    <div className="Heading">
-                      Layout1
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="Close">
-
-              </div>
-            </div>
-
-            <div className="Toast1">
-              <div className="content">
-                <div className="text-vert">
-                  <div className="Frame21741">
-                    <div className="Heading">
-                      Layout1
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="Close">
-
-              </div>
-            </div>
-
-
-
-          </div>
+        
 
 
         </div>
         </div>
         </div>
-     </div>
+        
     
     );
   }
