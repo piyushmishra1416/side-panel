@@ -118,12 +118,10 @@ export default class Header extends Component<HeaderProps, HeaderState> {
         </div>
 
         <div>
-        < Selectlayout name = "Layout1" />
-        
-       
+        < Selectlayout name="Layout1" />
         </div>
         <div> 
-          < Selectlayout name = "Layout2" />
+          < Selectlayout name="Layout2" />
           </div>
         
 

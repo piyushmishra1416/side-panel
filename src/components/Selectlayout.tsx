@@ -18,15 +18,15 @@ export default class Selectlayout extends Component<Selectlayoutprops> {
   
     return (
       
-        <div className="Frame21592"> 
-        <div className="toast">
-          <div className="content">
+        // <div className="Frame21592"> 
+        // <div className="toast">
+          <div className="Frame21592 content toast">
             <div className="Heading">
           {name }
           </div>
         </div>
-        </div>
-        </div>
+        // </div>
+        // </div>
    
    
 
