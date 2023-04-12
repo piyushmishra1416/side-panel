@@ -1,5 +1,6 @@
 .body {
   position: relative;
+  margin-right: 0%;
   width: 424px;
   height: 1080px;
 
@@ -8,7 +9,7 @@
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.Panel {
+.header {
   box-sizing: border-box;
 
   display: flex;
@@ -19,25 +20,16 @@
   width: 424px;
   height: 64px;
 
-  /* Grey/050
-  
-  Disabled background only
-  */
   background: #f6f6f6;
-  /* Grey/200
-  
-  Border — Table
-  */
-  border-bottom: 1px solid #cecece;
 
-  /* Inside auto layout */
+  border-bottom: 1px solid #cecece;
 
   flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
 }
-.Content {
+.header-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -58,78 +50,43 @@
   width: 46px;
   height: 20px;
 
-  /* 15px .font-md/500 */
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   margin-left: 24px;
-  /* margin-right: 354px; */
-  /* margin-top: 22px;
-margin-bottom: 22px; */
-  /* identical to box height, or 133% */
-
-  /* Grey/900 */
-
+  
   color: #3d4042;
-
-  /* Inside auto layout */
 
   flex: none;
   order: 0;
   flex-grow: 0;
 }
+
 .header-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: right;
   padding: 0px 16px;
-  /* margin-left: 330px; */
-  /* margin-right: 440px; */
+  
   margin-top: 16px;
   margin-bottom: 16px;
 
   width: 70px;
   height: 32px;
-  /* margin-left: 30px; */
-
-  /* Interactive/Default/Green (dark-green-600)
-
-Positive/Affirmative/Success — Primary UI
-*/
+  
   background: #2d8031;
   opacity: 0.4;
-
-  /* Inside auto layout */
 
   flex: none;
   order: 2;
   flex-grow: 0;
 }
 
-/* .button { */
-
-  /* display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-  
-  width: 70px;
-  height: 32px;
-   */
-   
-/* Inside auto layout */
- /* flex: none;
-  order: 1;
-  flex-grow: 0; 
- } */
 .button-text {
-  width: 38px;
+  width: 60px;
   height: 32px;
 
   /* 12px / Button / Inverse */
@@ -310,11 +267,7 @@ flex-grow: 0;
   color: #000;
 }
 
-/* .search-divider {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 10px;
-} */
-.settings {
+.layout-box {
   box-sizing: border-box;
 
 /* Auto layout */
@@ -338,56 +291,23 @@ Border — Table
 border-top: 1px solid #CECECE;
 
 }
-.Frame21948 {
+/* .search-box {
   display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 0px;
-gap: 16px;
+box-sizing: border-box;
 
 width: 376px;
 height: 32px;
-
-
-/* Inside auto layout */
 
 flex: none;
 order: 0;
 flex-grow: 0;
 
-}
-/* .searchparts {
-  
-box-sizing: border-box;
-
-/* Auto layout */
-
-/* display: flex;
-flex-direction: row;
-align-items: center;
-padding: 1px;
-
-width: 376px;
-height: 32px; */ */
-
-/* Documentation Colors/White
-
-Page Background Option
-*/
-/* background: #FFFFFF; */
-/* Grey/400
-
-Border — Control & Field Inputs
-*/
-/* border: 1px solid #949494; */
-
-/* Inside auto layout */
-
-/* flex: none;
-order: 0;
-flex-grow: 1;
-
 } */
+
+
 .icon {
   width: 30px;
 height: 30px;
@@ -430,238 +350,23 @@ text-align: center; */
 
 } */
 .text {
-  /* width: 344px;
-height: 30px; */
+  width: 352px;
+height: 30px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
 line-height: 18px;
 
-/* Inside auto layout */
 
-/* flex: none;
-order: 1;
-flex-grow: 1; */
 display: flex;
 flex-direction: row;
 align-items: flex-start;
-padding: 0px;
-gap: 16px;
-
-width: 376px;
-height: 32px;
-
-
-/* Inside auto layout */
+padding: 20px;
+box-sizing: border-box;
 
 flex: none;
 order: 0;
 flex-grow: 0;
 
 }
-/* .placeholder {
-  
-position: absolute;
-width: 83px;
-height: 18px;
-left: 0px; */
-/* top: calc(50% - 18px/2); */
-
-/* 13px .font-default/400 */
-
-/* font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 18px; */
-/* identical to box height, or 138% */
-
-/* display: flex;
-align-items: center; */
-
-/* Grey/550 */
-
-/* color: #767676;
-
-} */
-/* .Frame21592 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 16px;
-
-  width: 376px;
-  height: 806px;
-
-  /* Inside auto layout */
-
-  /* flex: none;
-  order: 1;
-  flex-grow: 0;
-} */ 
-/* .Frame21569 {
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 8px;
-
-width: 376px;
-height: 860px;
-overflow-y: scroll; */
-
-
-/* Inside auto layout */
-
-/* flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-
-} */
-/* .Toast1 {
-  
-box-sizing: border-box;
-
-/* Auto layout */
-
-/* display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: flex-start;
-padding: 0px 8px 0px 0px;
-
-width: 376px;
-height: 50px; */ 
-
-/* Documentation Colors/White
-
-Page Background Option
-*/
-/* background: #FFFFFF; */
-/* Grey/200
-
-Border — Table
-*/
-/* border: 1px solid #CECECE;
-border-radius: 4px; */
-
-/* Inside auto layout */
-
-/* flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
- 
-} */
-/* .content {
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 16px 8px 8px 16px;
-
-width: 350px;
-height: 50px; */
-
-
-/* Inside auto layout */
-
-/* flex: none;
-order: 0;
-flex-grow: 1;
-
-} */
-/* .text-vert {
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px 0px 8px;
-gap: 8px;
-
-width: 313px;
-height: 26px; */
-
-
-/* Inside auto layout */
-
-/* flex: none;
-order: 0;
-flex-grow: 0;
-
-} */
-/* .Frame21741 {
-  display: flex;
-flex-direction: row;
-align-items: flex-end;
-padding: 0px;
-gap: 8px;
-
-width: 313px;
-height: 18px; */
-
-
-/* Inside auto layout */
-
-/* flex: none;
-order: 0;
-flex-grow: 0;
-
-} */
-/* .Frame21946 {
-  display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 8px;
-
-width: 47px;
-height: 18px;
- */
-
-/* Inside auto layout */
-
-/* flex: none;
-order: 0;
-flex-grow: 0;
-
-}
-.Heading {
-  width: 47px;
-height: 18px; */
-
-/* 13px .font-default/500 */
-
-/* font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 18px; */
-/* identical to box height, or 138% */
-
-
-/* Grey/900 */
-
-/* color: #3D4042;
-
-} */
-/* .Close {
-  display: flex;
-flex-direction: row;
-justify-content: flex-end;
-align-items: flex-start;
-padding: 16px 0px 8px;
-
-width: 18px;
-height: 50px;
- */
-
-/* Inside auto layout */
-
-/* flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-
-} */

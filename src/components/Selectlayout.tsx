@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import "./select.css"
-// import { title } from 'process';
 
 interface Selectlayoutprops {
   name: string;
@@ -17,19 +16,14 @@ export default class Selectlayout extends Component<Selectlayoutprops> {
     const {name} = this.props;
   
     return (
-      
-        // <div className="Frame21592"> 
-        // <div className="toast">
           <div className="Frame21592 content toast">
             <div className="Heading">
           {name }
           </div>
+          <div className="vertbutton">
+          </div>
         </div>
-        // </div>
-        // </div>
-   
-   
-
+       
     )
   }
 }
