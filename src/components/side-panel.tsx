@@ -47,11 +47,10 @@ export default class Header extends Component<HeaderProps, HeaderState> {
             </button>
           </div>
         </header>
-       
+
         {/* BODY */}
         <div className="BodyContent">
-
-           {/* TABS */}
+          {/* TABS */}
           <div className="tabs">
             <button
               className="tab1"
@@ -66,29 +65,27 @@ export default class Header extends Component<HeaderProps, HeaderState> {
               <div className="label2">GLOBAL</div>
             </button>
           </div>
-          
-            {/* SEARCH BAR */}
+
+          {/* SEARCH BAR */}
           <div className="layout-box">
             <div className="search-box search searchparts">
-            
-                  {/* <div className="icon">
+              {/* <div className="icon">
                     <div className="icon-left"></div> */}
-                    <input
-                      className="text"
-                      type="text"
-                      placeholder="Search Layout"
-                      onChange={this.handleSearch}
-                    />
-                    {/* </div> */}
+              <input
+                className="text"
+                type="text"
+                placeholder="Search Layout"
+                onChange={this.handleSearch}
+              />
+              {/* </div> */}
             </div>
 
             {/* LAYOUT */}
             <div>
               <Selectlayout name="Layout1" />
-
             </div>
             <div>
-            <Selectlayout name="Layout2" />
+              <Selectlayout name="Layout2" />
             </div>
             <div>
               <Selectlayout name="Layout3" />

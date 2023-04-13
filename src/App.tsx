@@ -4,14 +4,11 @@ import Landing from "./components/grid";
 class App extends Component {
   render() {
     return (
-     
-<div>
-      <Landing />
-    </div>
-     
+      <div>
+        <Landing />
+      </div>
     );
   }
 }
 
 export default App;
-
