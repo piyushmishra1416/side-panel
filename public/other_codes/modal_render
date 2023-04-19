@@ -1,0 +1,22 @@
+<Modal
+          actions={[
+            <Btn
+              key='SL__1'
+              className='margin--right-half'
+              onClick={this.closeModal}
+            >
+              Cancel
+            </Btn>,
+            <Btn
+              key='SL__2'
+              btnType='primary'
+              disabled={!newLayout}
+              onClick={this.createLayout}
+            >
+              Submit
+            </Btn>,
+          ]}
+          open={isModalOpen}
+          closeHandler={this.closeModal}
+          title='Save Layout As'
+        >

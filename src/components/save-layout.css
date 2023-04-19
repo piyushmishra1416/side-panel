@@ -1,0 +1,35 @@
+.save-layout-modal {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 22vw;
+   
+   height: 22vw;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #000;
+ }
+ 
+ .save-layout-modal__content {
+   background-color: white;
+   padding: 20px;
+   border-radius: 4px;
+   width: 21.8vw;
+   height: 35vh;
+   border: #000;
+   border-style: solid;
+   /* border-color: black; */
+ }
+ .save-layout-modal-title {
+   display: flex;
+   align-items: right;
+   justify-content: center;
+
+ }
+ .save-layout-modal__input{
+   width: 18.8vw;
+   height: 2.2vh;
+ }
+ 

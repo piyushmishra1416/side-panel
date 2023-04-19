@@ -5,7 +5,7 @@
   padding: 0px;
   gap: 16px;
 
-  width: 376px;
+  width: 25vw;
   height: 806px;
 
   flex: none;
@@ -21,7 +21,7 @@
   align-items: flex-start;
   padding: 0px 8px 0px 0px;
 
-  width: 376px;
+  width: 25vw;
   height: 50px;
 
   background: #ffffff;
@@ -40,7 +40,7 @@
   align-items: flex-start;
   padding: 16px 8px 8px 16px;
 
-  width: 350px;
+  width: 22vw;
   height: 50px;
 
   flex: none;
@@ -64,3 +64,5 @@
   order: 0;
   flex-grow: 0;
 }
+
+
