@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "public/other_codes/modal.tsx"  ]
 }

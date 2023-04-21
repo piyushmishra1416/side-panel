@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import "./sidepanel.css";
 import Selectlayout from "./Selectlayout";
+import SaveLayoutModal from "./savelayoutas";
 
 interface HeaderProps {
   title: string;
   buttonText: string;
   onButtonClick: () => void;
+  
 }
 interface HeaderState {
   activeTab: "private" | "global";
+  isSaveLayoutModalOpen: boolean;
 }
 
 interface HeaderState {}
@@ -18,6 +21,7 @@ export default class Header extends Component<HeaderProps, HeaderState> {
     super(props);
     this.state = {
       activeTab: "private",
+      isSaveLayoutModalOpen: false,
     };
   }
 
@@ -28,13 +32,22 @@ export default class Header extends Component<HeaderProps, HeaderState> {
   handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const searchQuery = event.target.value;
   };
+  handleSaveLayoutClick = () => {
+    this.setState({ isSaveLayoutModalOpen: true });
+  };
+
+  handleCloseSaveLayoutModal = () => {
+    this.setState({ isSaveLayoutModalOpen: false });
+  };
 
   render() {
     const { title, buttonText, onButtonClick } = this.props;
-    const { activeTab } = this.state;
+    const { activeTab, isSaveLayoutModalOpen } = this.state;
 
     return (
+      <>
       <div className="body">
+
         {/* HEADER */}
         <header className="header">
           <div className="header-content title">
@@ -78,6 +91,10 @@ export default class Header extends Component<HeaderProps, HeaderState> {
                 onChange={this.handleSearch}
               />
               {/* </div> */}
+              <div>
+       <button onClick={this.handleSaveLayoutClick}>Save Layout</button>
+       
+     </div>
             </div>
 
             {/* LAYOUT */}
@@ -93,6 +110,12 @@ export default class Header extends Component<HeaderProps, HeaderState> {
           </div>
         </div>
       </div>
+      {isSaveLayoutModalOpen && (
+         <SaveLayoutModal onClose={this.handleCloseSaveLayoutModal} />
+       )}
+       
+     </>
+     
     );
   }
 }

@@ -13,11 +13,11 @@ export default class Landing extends Component {
         onButtonClick={() => console.log("Button Clicked!")}
       />
      
-      <div>
+      {/* <div>
       
           <MyComponent  />
         
-      </div>
+      </div> */}
       </div>
     );
   }
